@@ -4,9 +4,9 @@ from urllib import parse
 
 class LinkFinder(HTMLParser):
 
-    # Initialize class
-    def _init_(self, base_url, page_url):
-        super()._init_()
+    # Initializer
+    def __init__(self, base_url, page_url):
+        super().__init__()
         self.base_url = base_url
         self.page_url = page_url
         # Sorted, without duplicates
@@ -30,5 +30,3 @@ class LinkFinder(HTMLParser):
 
     def error(self, message):
         pass
-
-  
