@@ -8,7 +8,6 @@ class LinkFinder(HTMLParser):
         super().__init__()
         self.base_url = base_url
         self.page_url = page_url
-        # Sorted, without duplicates
         self.links = set()
 
     # Overwrite built in method

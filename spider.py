@@ -4,7 +4,6 @@ from general import *
 
 
 class Spider:
-
     # Class variables shared among all instances
     project_name = ''
     base_url = ''
